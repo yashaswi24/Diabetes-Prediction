@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="container">
+	<p>Diabetes mellitus (DM) is a chronic disease that is characterized by high blood glucose. Nearly half of all diabetics have household heredity factors, which is one of the most important features of DM. Failure of the pancreas to produce enough insulin and the body's inefficient use insulin are both pathologic causes of DM.</p>
+</div>
+<div class="container">
+	<form action="/submit" method="POST">
+
+ 	 <input type="radio" name="gender" value="male" checked> Male<br>
+ 	 <input type="radio" name="gender" value="female"> Female<br>
+ 	 <input type="radio" name="gender" value="other"> Other<br><br>
+ 	 Enter your height:<br>
+ 	 <input type="text" name="height"><br><br>
+ 	 Enter your weight:<br>
+ 	 <input type="text" name="weight"><br><br>
+ 	 <input type="submit" name="submit">
+ 	</form> 
+
+
+</div>
+{% endblock %}
